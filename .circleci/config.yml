@@ -10,7 +10,4 @@ workflows:
     jobs:
       - singularity/build_container_docker_base:
           from-uri: docker://busybox 
-          image: busybox.sif 
-          filters:
-            branches:
-              only: master
+          image: busybox.sif
