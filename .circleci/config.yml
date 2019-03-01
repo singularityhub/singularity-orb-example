@@ -3,7 +3,7 @@
 version: 2.1
 
 orbs:
-  singularity: singularity/singularity@dev:alpha
+  singularity: singularity/singularity@1.0.2
 
 workflows:
   build_container_docker_base_example:
