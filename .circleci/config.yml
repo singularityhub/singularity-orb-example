@@ -1,0 +1,16 @@
+# CircleCI build config to test the Google Cloud Platform Container Registry Orb published by CircleCI
+
+version: 2.1
+
+orbs:
+  singularity: singularity/singularity@1.0.0
+
+workflows:
+  build_example:
+    jobs:
+      - singularity/build_container:
+          from-uri: docker://busybox 
+          image: busybox.sif 
+          filters:
+            branches:
+              only: master
